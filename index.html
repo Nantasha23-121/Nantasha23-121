@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nantasha Haque | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .profile-img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #334155;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #2563eb;
+      border-left: 5px solid #2563eb;
+      padding-left: 12px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8fafc;
+      padding: 25px;
+      border-radius: 16px;
+      transition: 0.3s;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .card p {
+      color: #334155;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: #e0f2fe;
+      color: #0f172a;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #f1f5f9;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" alt="Profile photo" class="profile-img" />
+    <h1>Nantasha Haque</h1>
+    <p>
+      CSE 2nd Year 2nd Semester Student • Science Enthusiast • Problem Solver • Tech Lover
+    </p>
+    <a href="#about" class="btn">Explore Portfolio</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I am a CSE 2nd year 2nd semester student with a strong interest in algorithms, computer science, physics, and technology.
+      I enjoy solving programming problems, learning new software concepts, and exploring how technology shapes the world.
+      I also use Ubuntu Linux and love experimenting with coding and logical problem solving.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Interests</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Computer Science</h3>
+        <p>
+          Studying CSE with a focus on data structures, algorithms, and software development.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Physics & Astronomy</h3>
+        <p>
+          Interested in gravity, quantum physics, radiation, space science, and famous scientists.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Programming</h3>
+        <p>
+          Enjoy solving algorithmic problems and working with C++ and logical thinking.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Technology</h3>
+        <p>
+          Linux user who enjoys exploring software, systems, and modern tech tools.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+      <div class="skill">Data Structures</div>
+      <div class="skill">Physics</div>
+      <div class="skill">C++, JavaScript, CSS</div>
+      <div class="skill">Problem Solving</div>
+      <div class="skill">Ubuntu Linux</div>
+      <div class="skill">HTML & CSS</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Goals</h2>
+    <p>
+      My goal is to become skilled in computer science while continuing to explore programming, physics, and modern technology.
+      I want to combine analytical thinking and technical knowledge to solve real-world problems.
+    </p>
+  </section>
+
+    <footer>
+        &copy; 2024 Nantasha Haque. All rights reserved.
+    </footer>
+
+</body>
+</html>
